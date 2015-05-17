@@ -4,24 +4,13 @@
 <html>
 
     <head>
-        <title>Party</title>
+        <title>friendapp</title>
     </head>
 
     <body>
-        <h1>Party time says...hello world!</h1>
-        {% if users %}
-        <ul>
-        {% for user in users %}
-           <li><a href="/party/myuser/{{ user.slug }}">{{ user.name }}</a></li>
-           {% endfor %}
-       </ul>
-   {% else %}
-       <strong>There are no users present.</strong>
-   {% endif %}
+        <img src="{% static "friendapp/plot.png" %}" alt="Picture of my plot" />
+        <img src="{% static "friendapp/Windows-7-Logo-Wallpaper.jpg" %}" alt="Picture of window logo" />
 
-
-        <a href="/party/about/">About</a><br />
-        <img src="{% static "plot.png" %}" alt="Picture of my plot" />
     </body>
 
 </html>
