@@ -8,12 +8,11 @@
     </head>
 
     <body>
+      {% for plot in plots %}
       <div style="width: 500px; float:left; height:500px">
-        <img src="{% static "friendapp/plot.png" %}" alt="Picture of my plot" width="300px" height="300px" />
+        <img src="{% static plot %}" alt="Picture of my plot" width="300px" height="300px" />
       </div>
-      <div style="width: 500px; float:left; height:500px">
-        <img src="{% static "friendapp/Windows-7-Logo-Wallpaper.jpg" %}" alt="Picture of window logo" width="300px" height="300px" />
-      </div>
+      {% endfor %}
     </body>
 
 </html>
